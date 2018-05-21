@@ -23,3 +23,5 @@ e) además a través de la librería Mathelp_calc.php
 
 NOTA:
     He incorporado un filtro que imposibilita introducir caracteres no numéricos excepto las referentes a operaciones básicas del apartado a) y el punto
+
+    proyecto realizado en javascript, ajax con jquery y php
