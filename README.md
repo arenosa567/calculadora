@@ -1,5 +1,4 @@
-﻿"# calculadora" 
-
+﻿<h1>Proyecto Calculadora</h1>
 a) operaciones básicas (+ - * / raíz) y % su formato
     números operación números y click signo igual.- para que devuelva el resultado
     + .- suma
@@ -12,7 +11,10 @@ a) operaciones básicas (+ - * / raíz) y % su formato
 b) operaciones trigometría (seno(Sen), coseno(Cos), tangente(Tan). cotangente(Cotan), secante(Secos) y cosecante(Cosen)) así como las operaciones de binario(Bin) y hexadecimal (Hex) el formato:
     numeros operacion 
 
+
+
 c)la tecla de flecha <-- elimina un carácter
+
 
 d) teclas CA Y C
     Elimina todo lo que haya en la pantalla
