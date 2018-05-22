@@ -2,7 +2,7 @@
     var operacion;
     var punto;
     
-    function getlastchar(){ //obtener el ultimo caracter para asi poder escribirlo en la pantalla
+    function getlastchar(){ //obtener el ultimo caracter 
         var len =formulario.pantalla.length;
         if(len){
             return formulario.pantalla.value[len -1];
@@ -17,7 +17,7 @@
     
     function NumText(valor){//solo letras y caracteres especificados
         var out = '';
-        //Se añaden las letras validas
+       
         var filtro = '1234567890+-*/^r%.,';//Caracteres validos
 
         for (var i=0; i<valor.length; i++)
@@ -79,7 +79,7 @@
     function trigonome(signo){
         valor =formulario.pantalla.value; 
         if(signo == "Sen"){
-            //formulario.pantalla.value = Math.sin(num1);
+          
             $.ajax({
                 url:"server.php",
                 type:"post",
@@ -90,7 +90,7 @@
         }
         
         else if(signo == "Cos"){
-           //formulario.pantalla.value = Math.cos(num1);
+          
             $.ajax({
                 url:"server.php",
                 type:"post",
@@ -101,7 +101,7 @@
         }
         
         else if(signo == "Tan"){
-            //formulario.pantalla.value = Math.tan(num1);
+            
             $.ajax({
                 url:"server.php",
                 type:"post",
@@ -112,7 +112,7 @@
         }
         
         else if(signo == "Cotan"){
-        //formulario.pantalla.value = Math.cot(num1);
+        
             $.ajax({
                 url:"server.php",
                 type:"post",
@@ -123,7 +123,7 @@
         }
         
         else if(signo == "Secos"){
-            //formulario.pantalla.value = Math.sec(num1);
+           
             $.ajax({
                 url:"server.php",
                 type:"post",
@@ -134,7 +134,7 @@
         }
         
         else if(signo == "Cosen"){
-            //formulario.pantalla.value = Math.cos(num1);
+            
             $.ajax({
                 url:"server.php",
                 type:"post",
@@ -145,8 +145,7 @@
         }
         
         else if(signo == "Bin"){
-            //formulario.pantalla.value = valor.toString(8);
-            //formulario.pantalla.value = num1.toString(2);
+            
             $.ajax({
                 url:"server.php",
                 type:"post",
@@ -157,7 +156,7 @@
         }
         
         else if(signo == "Hex"){
-            //formulario.pantalla.value = num1.toString(16);
+            
             $.ajax({
                 url:"server.php",
                 type:"post",

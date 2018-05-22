@@ -5,8 +5,7 @@
        if(isset($_POST["calculo"])){
            $numbers =$_POST["calculo"];
            $resultado = MathHelp_calc::calculate_str($numbers);
-            //echo number_format($resultado,2,'.','');
-          
+                      
            if($resultado == "NaN"){
                 echo false;
            }else{
