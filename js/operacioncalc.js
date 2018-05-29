@@ -71,98 +71,86 @@
             url:"server.php",
             type:"post",
             data:{"calculo":valor}
-        }).done(function(resul){
+        }).success(function(resul){
             formulario.pantalla.value = resul;
         }); 
     }
 
     function trigonome(signo){
         valor =formulario.pantalla.value; 
-        if(signo == "Sen"){
-          
-            $.ajax({
-                url:"server.php",
-                type:"post",
-                data:{"seno":valor}
-            }).done(function(resul){
-                formulario.pantalla.value = resul;
-            });
+        switch(signo){
+            case "Sen":
+                $.ajax({
+                    url:"server.php",
+                    type:"post",
+                    data:{"seno":valor}
+                }).success(function(resul){
+                    formulario.pantalla.value = resul;
+                });
+                break;
+            case "Cos":
+                $.ajax({
+                    url:"server.php",
+                    type:"post",
+                    data:{"coseno":valor}
+                }).success(function(resul){
+                    formulario.pantalla.value = resul;
+                });
+                break;
+            case "Tan":
+                $.ajax({
+                    url:"server.php",
+                    type:"post",
+                    data:{"tangente":valor}
+                }).success(function(resul){
+                    formulario.pantalla.value = resul;
+                });
+                break;
+            case "Cotan":
+                $.ajax({
+                    url:"server.php",
+                    type:"post",
+                    data:{"contagente":valor}
+                }).success(function(resul){
+                    formulario.pantalla.value = resul;
+                });
+                break;
+            case "Secos":
+                $.ajax({
+                    url:"server.php",
+                    type:"post",
+                    data:{"secante":valor}
+                }).success(function(resul){
+                    formulario.pantalla.value = resul;
+                });
+                break;
+            case "Cosen":
+                $.ajax({
+                    url:"server.php",
+                    type:"post",
+                    data:{"cosecante":valor}
+                }).success(function(resul){
+                    formulario.pantalla.value = resul;
+                });
+                break;
+            case "Bin":
+                $.ajax({
+                    url:"server.php",
+                    type:"post",
+                    data:{"binario":valor}
+                }).success(function(resul){
+                    formulario.pantalla.value = resul;
+                });
+                break;
+            case "Hex":
+                $.ajax({
+                    url:"server.php",
+                    type:"post",
+                    data:{"hexadecimal":valor}
+                }).success(function(resul){
+                    formulario.pantalla.value = resul;
+                });
+                break;
         }
         
-        else if(signo == "Cos"){
-          
-            $.ajax({
-                url:"server.php",
-                type:"post",
-                data:{"coseno":valor}
-            }).done(function(resul){
-                formulario.pantalla.value = resul;
-            });
-        }
-        
-        else if(signo == "Tan"){
-            
-            $.ajax({
-                url:"server.php",
-                type:"post",
-                data:{"tangente":valor}
-            }).done(function(resul){
-                formulario.pantalla.value = resul;
-            });
-        }
-        
-        else if(signo == "Cotan"){
-        
-            $.ajax({
-                url:"server.php",
-                type:"post",
-                data:{"contangente":valor}
-            }).done(function(resul){
-                formulario.pantalla.value = resul;
-            });
-        }
-        
-        else if(signo == "Secos"){
-           
-            $.ajax({
-                url:"server.php",
-                type:"post",
-                data:{"secante":valor}
-            }).done(function(resul){
-                formulario.pantalla.value = resul;
-            });
-        }
-        
-        else if(signo == "Cosen"){
-            
-            $.ajax({
-                url:"server.php",
-                type:"post",
-                data:{"cosecante":valor}
-            }).done(function(resul){
-                formulario.pantalla.value = resul;
-            });
-        }
-        
-        else if(signo == "Bin"){
-            
-            $.ajax({
-                url:"server.php",
-                type:"post",
-                data:{"binario":valor}
-            }).done(function(resul){
-                formulario.pantalla.value = resul;
-            });
-        }
-        
-        else if(signo == "Hex"){
-            
-            $.ajax({
-                url:"server.php",
-                type:"post",
-                data:{"hexadecimal":valor}
-            }).done(function(resul){
-                formulario.pantalla.value = resul;
-            });
-        }
     }
